@@ -37,8 +37,6 @@
         <div class="spinner"></div>
     </div>
     <!-- Spinner End -->
-
-
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
@@ -51,7 +49,7 @@
             </div>
             <div class="col-lg-4 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                   <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a> -->
+                    <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a> -->
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/search/top?q=sriram%20personnel%20services"><i class="fab fa-facebook-f fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/sriram-personnel-services---india?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BIZxHvNj3RSCgu1yI6QCmYQ%3D%3D"><i class="fab fa-linkedin-in fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/srirampersonnelservices/"><i class="fab fa-instagram fw-normal"></i></a>
@@ -61,8 +59,6 @@
         </div>
     </div>
     <!-- Topbar End -->
-
-
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
@@ -78,8 +74,8 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
-                     <a href="certification.html" class="nav-item nav-link">Certification</a>
-                    
+                    <a href="certification.html" class="nav-item nav-link">Certification</a>
+
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                         <div class="dropdown-menu m-0">
@@ -117,8 +113,6 @@
         </div>
     </div>
     <!-- Navbar End -->
-
-
     <!-- Full Screen Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
@@ -136,8 +130,6 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
-
-
     <!-- Contact Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -182,38 +174,47 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+
+                    <!-- <div id="fcf-form">-->
+                    <form method="post" action="fcf-assets/fcf.process.php">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                                <input type="text" name="Name" id="Name" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;" data-validate-field="Name">
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" name="Email" id="Email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;" data-validate-field="Email">
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                                <textarea name="Message" id="Message" class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message" data-validate-field="Message"></textarea>
                             </div>
+                            <div id="fcf-status" class="fcf-status"></div>
                             <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                <button id="fcf-button" class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                             </div>
                         </div>
                     </form>
                 </div>
+                <div id="fcf-thank-you" style="display:none">
+                    <!-- Thank you message goes below -->
+                    <strong>Thank you</strong>
+                    <p>Thanks for contacting us, we will get back in touch with you soon.</p>
+                    <!-- Thank you message goes above -->
+                </div>
+                <script src="fcf-assets/js/fcf.just-validate.min.js"></script>
+                <script src="fcf-assets/js/fcf.form.js"></script>
+                <!-- the lines above are needed -->
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=sriram%20personnel%20services%20hadapsar%20Pune+(SriRam%20Personnel%20Services%20Pvt%20Ltd)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                        frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=sriram%20personnel%20services%20hadapsar%20Pune+(SriRam%20Personnel%20Services%20Pvt%20Ltd)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0">
+
+                    </iframe>
                 </div>
             </div>
         </div>
     </div>
     <!-- Contact End -->
-
-
     <!-- Vendor Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5 mb-5">
@@ -234,10 +235,8 @@
         </div>
     </div>
     <!-- Vendor End -->
-    
-
-     <!-- Footer Start -->
-     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-6 footer-about">
@@ -315,18 +314,18 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Srirampersonnelservices</a>. All Rights Reserved. 
-						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						Designed by <a class="text-white border-bottom" href="https://www.linkedin.com/in/kaushal-kishor-160a80178/">Kaushal Mishra</a></p>
+                        <p class="mb-0">
+                            &copy; <a class="text-white border-bottom" href="#">Srirampersonnelservices</a>. All Rights Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed by <a class="text-white border-bottom" href="https://www.linkedin.com/in/kaushal-kishor-160a80178/">Kaushal Mishra</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
-
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 

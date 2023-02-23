@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\js",
+    "\\mail"
   ],
+  "SelectedNode": "\\mail\\contact.php",
   "PreviewInSolutionExplorer": false
 }
