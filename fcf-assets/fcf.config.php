@@ -1,15 +1,4 @@
 <?php
-// ************************************
-// This file is part of a package from:
-// www.majesticform.com
-
-// Free Version
-// 2 January 2022
-
-// You are free to use an edit for 
-// your own use. But cannot resell
-// or repackage in any way.
-// ************************************
 
 
 // ***********
@@ -51,7 +40,7 @@ define('EMAIL_TEMPLATE_IN_TEXT', 'fcf.email-in.txt');
 define('EMAIL_TEMPLATE_OUT_HTML', 'fcf.email-out.htm');
 define('EMAIL_TEMPLATE_OUT_TEXT', 'fcf.email-out.txt');
 
-define('SEND_AUTO_RESPONSE', 'NO'); // YES OR NO
+define('SEND_AUTO_RESPONSE', 'YES'); // YES OR NO
 define('EMAIL_OUT_SUBJECT', '');
 define('EMAIL_OUT_TO', 'FIELD:Email');
 define('EMAIL_OUT_TO_NAME', 'FIELD:Name');
@@ -62,7 +51,7 @@ define('EMAIL_OUT_FROM_NAME', '');
 // *************
 // EMAIL MESSAGE
 // *************
-define('EMAIL_TO', '');
+define('EMAIL_TO', 'kaushalm797@gmail.com');
 define('EMAIL_TO_NAME', '');
 
 define('EMAIL_TO_CC', '');
@@ -71,7 +60,7 @@ define('EMAIL_TO_CC_NAME', '');
 define('EMAIL_TO_BCC', '');
 define('EMAIL_TO_BCC_NAME', '');
 
-define('EMAIL_FROM', '');
+define('EMAIL_FROM', 'Kaushalm2407@gmail.com');
 define('EMAIL_FROM_NAME', '');
 
 define('EMAIL_REPLY_TO', 'FIELD:Email');

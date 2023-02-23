@@ -1,16 +1,4 @@
 <?php
-// ************************************
-// This file is part of a package from:
-// www.majesticform.com
-
-// Free Version
-// 2 January 2022
-
-// You are free to use an edit for 
-// your own use. But cannot resell
-// or repackage in any way.
-// ************************************
-
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
